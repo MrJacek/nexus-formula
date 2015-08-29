@@ -7,8 +7,6 @@
     - group: root
     - mode: 644
     - template: jinja
-    - require:
-      - pkg: nginx
     - context:
       nexus_server_name: {{ nexus.server_name }}
       nexus_port: {{ nexus.port }}
