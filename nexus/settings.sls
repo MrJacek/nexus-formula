@@ -10,10 +10,10 @@
 {%- endif %}
 
 {%- set version   = g.get('version', p.get('version', '2.11.1-01')) %}
-{%- set prefix    = g.get('prefix', p.get('prefix', '/srv/nexus')) %}
+{%- set prefix    = g.get('prefix', p.get('prefix', '/opt/nexus')) %}
 {%- set home      = prefix + '/nexus' %}
 {%- set real_home = home + '-' + version %}
-{%- set workdir   = g.get('workdir', p.get('workdir', '/srv/nexus/sonatype_work')) %}
+{%- set workdir   = g.get('workdir', p.get('workdir', '/opt/nexus/sonatype_work')) %}
 {%- set piddir    = g.get('piddir', p.get('piddir', '/var/run/nexus')) %}
 {%- set username  = g.get('username', p.get('username', 'nexus')) %}
 {%- set group     = g.get('group', p.get('group', 'nexus')) %}
