@@ -2,7 +2,7 @@ server {
   listen 80;
   client_max_body_size 750M;
 
-  server_name {{ nexus_server_name }};
+  server_name nexus.{{ nexus_server_name }};
 
   location ^~ / {
     proxy_pass              http://localhost:{{ nexus_port }};
